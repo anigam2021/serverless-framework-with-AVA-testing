@@ -1,4 +1,4 @@
-version: 2.1
+version: 0.2
 
 # add your orb below, to be used in integration tests (note: a @dev:alpha
 # release must exist.);

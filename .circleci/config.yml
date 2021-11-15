@@ -27,8 +27,8 @@ jobs:
       - node/install-packages
       - serverless/setup:
           provider: AWS
-          app-name: serverless-framework-orb
-          org-name: circleci
+          app-name: serverless-framework-with-CircleCI-Testing
+          org-name: Melvin
       - run:
           name: Local invoke add function
           command: serverless invoke local --function add --path 'sampleData/data.json'

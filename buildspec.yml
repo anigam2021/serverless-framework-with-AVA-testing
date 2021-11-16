@@ -10,13 +10,12 @@ phases:
   build:
     commands:
       - yarn test
-      - aws cloudformation create-change-set --stack-name Serverless-with-unittesting --change-set-name my-change-set --template-body file://template.yaml --capabilities CAPABILITY_IAM
+      - aws cloudformation create-stack --stack-name Serverless-with-unittesting --change-set-name my-change-set --template-body file://template.yaml --capabilities CAPABILITY_IAM
       - aws cloudformation package --template-file template.yaml --output-template-file cf-template.yaml --s3-bucket serverlesswithunittest
 
 artifacts:
   files:
     - cf-template.yaml
-
 
 
 

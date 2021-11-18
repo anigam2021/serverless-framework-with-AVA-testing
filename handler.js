@@ -4,7 +4,7 @@ const AWS = require('aws-sdk');
 const App = require('./app.js');
 
 const dynamoDb = new AWS.DynamoDB.DocumentClient({
-  apiVersion: '2021-11-16'
+  apiVersion: 'V1'
 });
 
 const app = new App(dynamoDb);

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "This is an example of how unit testing can be done with AWS SAM and CodePipeline",
   "repository": "",
-  "author": "Mahdi Azarboon",
+  "author": "Alok Nigam",
   "license": "MIT",
   "nyc": {
     "exclude": [

@@ -71,9 +71,9 @@ Resources:
 Outputs:
     readItemApi:
       Description: "API Gateway endpoint URL for Prod stage for readItem function"
-      Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Dev/read_item/"
+      Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/read_item/"
 
     createItemApi:
       Description: "API Gateway endpoint URL for Prod stage for createItem function"
-      Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Dev/create_item/"
+      Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/create_item/"
 
